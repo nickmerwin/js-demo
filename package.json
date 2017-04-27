@@ -7,7 +7,7 @@
     "todomvc-app-css": "^2.0.1"
   },
   "devDependencies": {
-    "coveralls": "^2.11.15",
+    "coveralls": "^2.13.1",
     "jasmine-core": "^2.5.2",
     "karma": "^1.4.0",
     "karma-coverage": "^1.1.1",
