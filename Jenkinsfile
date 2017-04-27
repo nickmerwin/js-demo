@@ -13,7 +13,8 @@ pipeline {
     }
     stage('Coveralls') {
       steps {
-        sh 'cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js -v'
+        sh '''# cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js -v
+printenv'''
       }
     }
   }
