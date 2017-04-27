@@ -11,6 +11,11 @@ pipeline {
         sh 'npm test'
       }
     }
+    stage('Coveralls') {
+      steps {
+        sh 'cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js -v'
+      }
+    }
   }
   environment {
     COVERALLS_SERVICE_NAME = 'jenkins-enterprise'
